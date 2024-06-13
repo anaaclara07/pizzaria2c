@@ -1,10 +1,10 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import {Routes,Route} from 'react-router-dom' 
 import Home from './pages/Home'
 
+
+
 const App = () => {
-
-
   const [color] = useState("#eb8d04")
   document.body.style.backgroundColor = color
 
@@ -13,8 +13,7 @@ const App = () => {
   return(
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path='/inicio' element={<Inicio/>} />
-    </Routes>
+      </Routes>
   )
 }
 
